@@ -17,8 +17,11 @@ namespace HomeTask_method
            // Console.WriteLine(numOfOdds(n,m));
            //Tasl4
            // Console.WriteLine(IsPrime(25));
-           
-           
+           //Task 5
+            int n = 16;
+            Console.WriteLine(IsPrime(n));
+
+
         }
 
 
@@ -30,7 +33,7 @@ namespace HomeTask_method
 
         }
         //Task2
-        static int SumArrofelement( int [] arr)
+        static int SumArrofelement(int[] arr)
         {
             int sum = 0;
             for (int i = 0; i < arr.Length; i++)
@@ -54,29 +57,35 @@ namespace HomeTask_method
             return count;
         }
 
-        static string IsPrime (int n)
+        static string IsPrime(int n)
         {
-            for (int i = 2; i<n; i++)
+            for (int i = 2; i < n; i++)
             {
-                if( n % 1 == 0)
+                if (n % 1 == 0)
                     return "murekkebdir";
 
             }
             return "sadedir";
-        }   
-        
+        }
+        static string IsPrime(double n)
+        {
+            while (n > 0)
+            {
+                n = n / 2;
+                if (n == 1)
+                    return "ededi 2-nin quvvetidir";
+            }
+            return "ededi 2-nin quvveti deyil";
 
-                
-                
 
-                
-            
-           
+
+
+
+        }
+
+
+
     }
-       
-
-
-
 }
 
 
